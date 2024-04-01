@@ -1,0 +1,131 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Houses for Sale</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+<img src="logo.jpeg" alt="Profile Picture" class="profile-img""width="70" height="70">
+<h1>UNITY HOME<h1>
+    
+    <h1>Welcome to Houses for Sale</h1>
+<nav>
+     
+      <a href="#about">About Us</a>        <a href="#listings">Listings</a>
+        <a href="contact.html">Contact</a>
+     
+    </nav>
+    <p>Your destination for finding your dream home</p>
+  </header>
+  
+  <main>
+    <section id="about">
+      <h2>About Us</h2>
+      <p>Unity Homes was founded in 2015 with the vision of building sustainable
+
+
+
+
+
+ residential communities across Africa.
+ We are currently building, family-friendly communities in Tatu City of almost 3,000 units 
+which constitute 1, 2, 3 and 4 bedroom modern homes on 34 acres 
+We are passionate about delivering excellent, high quality houses to our clients and we accomplish through highly 
+motivated, ardent teams.</section>
+    
+    <section id="listings">
+      <h2>Featured Listings</h2>
+      <div class="listing">
+        <img src="home.jpeg" alt="House 1">
+        <h3>Beautiful Family Home</h3>
+        <p>Price: $500,000</p>
+        <a href="kip.html">View Details</a></button>
+      </div>
+      <div class="listing">
+        <img src="home2.jpeg" alt="House 2">
+        <h3>Luxury Villa with Pool</h3>
+        <p>Price: $1,200,000</p>
+
+        <a href="kip3.html">View Details</a></button>
+      </div>
+      <!-- Additional listings go here -->
+    </section>
+    
+    <section id="contact">
+      <h2>Contact Us</h2>
+      <p>For inquiries or to schedule a viewing, please contact us:</p>
+      <ul>
+        <li>Email: info@housesforsale.com</li>
+        <li>Phone: 123-456-7890</li>
+        <li>Address: 123 Main St, City, State, ZIP</li>
+      </ul>
+    </section>
+  </main>
+  
+  <footer>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        transition: background-color 0.5s ease;
+    }
+    .container {
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 20px;
+    }
+    button {
+        padding: 10px 20px;
+        margin: 10px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    #likeBtn {
+        background-color: #007bff;
+        color: #fff;
+    }
+    #subscribeBtn {
+        background-color: #28a745;
+        color: #fff;
+    }
+</style>
+</head>
+<body>
+
+<div class="container">
+    <h2>Subscribe and Like</h2>
+    <button id="subscribeBtn" onclick="subscribe()">Subscribe</button>
+    <button id="likeBtn" onclick="like()">Like</button>
+</div>
+
+<script>
+    let subscribed = false;
+
+    function subscribe() {
+        // Simulate registration process
+        // Here you can add your registration logic
+        subscribed = true;
+        alert("Thank you for subscribing!");
+    }
+
+    function like() {
+        if (subscribed) {
+            document.body.style.backgroundColor = "red";
+            alert("Thank you for liking the page!");
+        } else {
+            alert("Please subscribe first!");
+        }
+    }
+</script>
+
+</body>
+    <p>&copy; 2024 Houses for Sale</p>
+  </footer>
+</body>
+</html>

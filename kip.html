@@ -1,0 +1,275 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Property Details</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+  }
+  .container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  .property-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 20px;
+  }
+  h1 {
+    margin-top: 0;
+  }
+  p {
+    margin-bottom: 10px;
+  }
+</style>
+</head>
+<body>
+<div class="container">
+  <img src="home.jpeg" alt="Property Image" class="property-image">
+  <h1>Beautiful Family Home</h1>
+  <p><strong>Location:</strong> City, State</p>
+  <p><strong>Price:</strong> $300,000</p>
+  <p><strong>Bedrooms:</strong> 4</p>
+  <p><strong>Bathrooms:</strong> 2.5</p>
+  <p><strong>Description:</strong> A house is a single-unit residential building.
+ It may range in complexity from a rudimentary hut to a complex structure of wood, masonry, concrete or other material, outfitted 
+with plumbing, electrical, and heating, ventilation, and air conditioning systems.
+<p><strong>Features:</strong></p>
+  <ul>
+    <li>Spacious living areas</li>
+    <li>Modern kitchen with stainless steel appliances</li>
+    <li>Master suite with walk-in closet</li>
+    <li>Fully landscaped backyard</li>
+    <li>Attached garage</li>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+  }
+  .container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  #tourImage {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    transition: opacity 0.5s ease;
+  }
+  .button-container {
+   
+ text-align: center;
+    margin-top: 20px;
+  }
+  .button-container button {
+    padding: 10px 20px;
+    margin: 0 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  .button-container button:hover {
+    background-color: #0056b3;
+  }
+</style>
+</head>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+  }
+  .container {
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  h1, h2 {
+    text-align: center;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+  }
+  th, td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  th {
+    background-color: #f2f2f2;
+  }
+  .total {
+    font-weight: bold;
+  }
+</style>
+</head>
+<body>
+
+<div class="container">
+  <h1>materials used </h1>
+  <table>
+    <tr>
+      <th>Material</th>
+      <th>Price per Unit ($)</th>
+      <th>Quantity</th>
+      <th>Total Price ($)</th>
+    </tr>
+    <tr>
+      <td>Concrete Foundation</td>
+      <td>100</td>
+      <td>50 sq ft</td>
+      <td>5000</td>
+    </tr>
+    <tr>
+      <td>Wood Frame</td>
+      <td>5</td>
+      <td>200 sq ft</td>
+      <td>1000</td>
+    </tr>
+    <tr>
+      <td>Brick Exterior Walls</td>
+      <td>10</td>
+      <td>300 sq ft</td>
+      <td>3000</td>
+    </tr>
+    <tr>
+      <td>Asphalt Shingle Roofing</td>
+      <td>3</td>
+      <td>500 sq ft</td>
+      <td>1500</td>
+    </tr>
+    <tr class="total">
+      <td colspan="3">Total Price:</td>
+      <td>10500</td>
+    </tr>
+  </table>
+  <p>This beautiful house is constructed with high-quality materials and is priced at $10500. Contact us for more information.</p>
+</div>
+
+</body>
+<body>
+<div class="container">
+  <h2>Virtual Tour</h2>
+  <img id="tourImage" src="room1.jpeg" alt="Room 1">
+  <div class="button-container">
+    <button onclick="showRoom('room1.jpeg')">Room 1</button>
+    <button onclick="showRoom('room2.jpeg')">Room 2</button>
+    <button onclick="showRoom('room3.jpeg')">Room 3</button>
+    <!-- Add more buttons for additional rooms -->
+  </div>
+</div>
+
+<script>
+function showRoom(imageSrc) {
+  var tourImage = document.getElementById('tourImage');
+  tourImage.style.opacity = '0'; // Fade out the current image
+  setTimeout(function() {
+    tourImage.src = imageSrc; // Change the image source
+    tourImage.style.opacity = '1'; // Fade in the new image
+  }, 500); // Wait for the fade out transition to complete
+}
+</script>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: grey;
+  }
+  .container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  h1 {
+    text-align: center;
+  }
+  .form-group {
+    margin-bottom: 20px;
+  }
+  label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    width: 50%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+  }
+  input[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  input[type="submit"]:hover {
+    background-color: #0056b3;
+  }
+</style>
+</head>
+<body>
+<div class="container">
+  <h1>Book a House for Sale</h1>
+  <form action="#" method="post">
+    <div class="form-group">
+      <label for="name">Your Name:</label>
+      <input type="text" id="name" name="name" required>
+    </div>
+    <div class="form-group">
+      <label for="email">Your Email:</label>
+      <input type="email" id="email" name="email" required>
+    </div>
+    <div class="form-group">
+      <label for="phone">Phone Number:</label>
+      <input type="text" id="phone" name="phone" required>
+    </div>
+    <div class="form-group">
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" rows="5" required></textarea>
+    </div>
+    <input type="submit" value="Submit">
+  </form>
+</div>
+  </ul>
+</div>
+</body>
+</html>
